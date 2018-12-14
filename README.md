@@ -14,27 +14,29 @@ This plugin has 6 options: “el”, “css”, “speed”, “position”, “
 
 Here are the default option settings
 
-el : null
-css : “background-position”
-speed: 1
-position: “center”
-moveBy: “percent”
-preventIfLarge: false
-Options
-El
+## el : null
+## css : “background-position”
+## speed: 1
+## position: “center”
+## moveBy: “percent”
+## preventIfLarge: false
+
+## Options
+
+### El
 This option is required. The javascript object you want the effect attached to
 
-CSS
+### CSS
 This variable has two options, “background-position” & “object-position”. background-position will apply the effect to a background image while object-position will apply the effect to an “img” tag.
 
-Speed
+### Speed
 Effects how much the parallax affects the image
 
-Position
+### Position
 This will affect the background-position “left” or “right” position.
 
-moveBy
+### moveBy
 This variable has two options, “percent” & “px”. This will move the image either by percents or pixels.
 
-preventIfLarge
+### preventIfLarge
 This is a boolean variable. If the image element is larger than the the viewport, it may not scroll correctly. If the image itself is still large enough, than sometimes it works, but if its set to false, it will default the position to “50%”, or essentially center.
