@@ -12,7 +12,7 @@ I have found that it works best with an element that is wider than the ratio of 
 
 This plugin has 6 options: “el”, “css”, “speed”, “position”, “moveBy”, “preventIfLarge”, with “el” being the only option that needs to be set.
 
-Here are the default option settings
+## Here are the default option settings
 
 ### el : null
 ### css : “background-position”
