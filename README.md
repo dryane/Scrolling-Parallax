@@ -14,12 +14,12 @@ This plugin has 6 options: “el”, “css”, “speed”, “position”, “
 
 Here are the default option settings
 
-## el : null
-## css : “background-position”
-## speed: 1
-## position: “center”
-## moveBy: “percent”
-## preventIfLarge: false
+### el : null
+### css : “background-position”
+### speed: 1
+### position: “center”
+### moveBy: “percent”
+### preventIfLarge: false
 
 ## Options
 
