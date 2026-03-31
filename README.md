@@ -1,14 +1,22 @@
 # Scrolling-Parallax
 
-A jQuery based parallax effect that scrolls the background image along with the scroll of the user. The center of image will be at the center of the element, when the element is vertically centered within the screen. You can see the affect in the image above, the lake line is in the center of the image, but scrolls at a slower pace then the browser moves.
+A js based parallax effect that scrolls the background image along with the scroll of the user. The center of image will be at the center of the element, when the element is vertically centered within the screen. You can see the affect in the image above, the lake line is in the center of the image, but scrolls at a slower pace then the browser moves.
 
 I have found that it works best with an element that is wider than the ratio of the photo used. For an example of what I mean, as you shrink the screen, the above image will scroll less the closer the element gets to the ratio of 2:1.
 
-	$(document).ready(function(){
-		$('.parallax').each(function() {
-			new parallax({ el : this, css:"object-position", moveBy:"pixel", preventIfLarge:true });
-		});
-	});
+```
+document.addEventListener('DOMContentLoaded', function() {
+    function initializeParallax() {
+        document.querySelectorAll('.parallax').forEach(function(el) {
+            new parallax({ el: el });
+        });
+    }
+    initializeParallax();
+    window.addEventListener('pronto.render', function(event) {
+        initializeParallax();
+    });
+});
+```
 
 This plugin has 6 options: “el”, “css”, “speed”, “position”, “moveBy”, “preventIfLarge”, with “el” being the only option that needs to be set.
 
